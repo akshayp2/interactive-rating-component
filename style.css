@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsla(213, 20%, 18%, 0.578);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+html{
+
+    background-color: var(--Very-Dark-Blue);
+    color: white;
+}
+
+/* utility */
+.Rating-card .show{
+    display: block;
+}
+
+.Rating-card .hide{
+    display: none;
+}
+/* utility */
+
+
+.star {
+    margin: 1rem auto;
+    border-radius: 100%;
+    padding: 16px;
+    background-color:hsl(213deg 24.21% 22.69% / 27%);
+    color: var(--Orange);
+}
+
+p {
+    font-size: 15px;
+    margin-top: 10px;
+    word-wrap: break-word;
+    color: var(--Light-Grey);
+}
+
+.Rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+    font-family: 'Overpass', sans-serif;
+    margin: auto auto;
+}
+.Rating-card{
+    width:min(24rem,80%);
+    padding: 1em 1.5em;
+    border-radius: 30px;
+    background-color: var(--Dark-Blue);
+}
+.card {
+    display:block;
+}
+
+    
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0 auto;
+
+}
+
+ul li {
+    margin: 2em auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 20px;
+    border: none;
+    background-color:hsl(213deg 24.21% 22.69% / 27%);
+
+}
+
+ul li:hover{
+    background-color: var(--Orange);
+    color: black;
+}
+ul li:visited,li:focus{
+    background-color: var(--White);
+    color: black;
+}
+
+.submit {
+    background-color: var(--Orange);
+    width: 100%;
+    padding: 12px;
+    border-radius: 2em;
+    background-color: orange;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+}
+
+.submit:active{
+    background-color: var(--White);
+    color: black;
+}
+
+
+
+
+/* thank you section */
+.thank-you-card{
+    display: none;
+}
+.thank-you{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.thank-you>*{
+    margin: 10px auto;
+}
+.thank-you p{
+
+    text-align: center;
+} 
+
+.no-of-ratings {
+    color: var(--Orange);
+    padding: 10px;
+    border-radius: 20px;
+    background-color:hsla(214, 24%, 23%, 0.482);
+    
+}
